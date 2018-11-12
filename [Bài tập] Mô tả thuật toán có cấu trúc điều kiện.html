@@ -9,17 +9,19 @@
     var a = parseInt(prompt("Nhập vào số a: "));
     var b = parseInt(prompt("Nhập vào số b: "));
     var c = parseInt(prompt("Nhập vào số c: "));
-    var max = a;
+    var max;
     if (a > b){
-        max = a
-    }else {
-        if (b < c){
-            max = c
-        } else{
-            max = b
+        if(a > c) {
+            max = a;
+        } else {
+            if (b < c) {
+                max = c;
+            } else {
+                max = b;
+            }
         }
     }
-    document.write("Giá trị lớn nhất là:" + max);
+    alert(max);
 </script>
 </body>
 </html>
